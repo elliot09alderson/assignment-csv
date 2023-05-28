@@ -8,4 +8,4 @@
  sort :  https://restapi-1kfv.onrender.com/api/students/all?sort=name
  searching :  https://restapi-1kfv.onrender.com/api/students/all?name=shanu&std=9
 
-# for adding csv file  https://restapi-1kfv.onrender.com/api/students/all
+# for adding csv file  https://restapi-1kfv.onrender.com/addcsv
