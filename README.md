@@ -1,6 +1,6 @@
 # assignment-csv
 #  url to get files https://restapi-1kfv.onrender.com/api/students/all
-! only 4 data should be visible at a time add ?page=2 at the end of url to see more data
+! only 4 data should be visible at a time add  query ["?page=2"] at the end of url to see more data
  url to add csv files https://restapi-1kfv.onrender.com/addcsv
 
 # REST functionalities
