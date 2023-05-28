@@ -24,6 +24,7 @@ config({ path: "./config/config.env" });
 
 const PORT = 5000;
 
+// Multer Configuration for adding the csv file
 var storage = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, "./public/uploads");
@@ -44,6 +45,7 @@ const start = async () => {
     console.log(error);
   }
 };
+
 
 start();
 connectDB();
