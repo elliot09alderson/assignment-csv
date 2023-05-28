@@ -7,11 +7,13 @@ import { connectDB } from "./db/connect.js";
 import multer from "multer";
 import bodyParser from "body-parser";
 import { importStudents } from "./controllers/student.js";
-var upload = multer({ dest: "uploads/" });
+import cors from "cors";
 import path from "path";
 
 
 const app = express();
+var upload = multer({ dest: "uploads/" });
+
 
 
 // importing middlewares
@@ -19,6 +21,10 @@ app.use(express.static(path.join(path.resolve(), "public")));
 app.use("/api/students", studentRouter);
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(cors({
+   origin:["https://restapi-1kfv.onrender.com"],
+   methods:["GET","POST"]
+}))
 
 config({ path: "./config/config.env" });
 
